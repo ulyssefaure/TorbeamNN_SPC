@@ -1,0 +1,4803 @@
+{
+  "baseline": {
+    "test": {
+      "n_samples": 3300,
+      "true_flag_counts": {
+        "0": 2705,
+        "2": 50,
+        "3": 476,
+        "8": 10,
+        "10": 31,
+        "100": 28
+      },
+      "predicted_flag_counts": {
+        "0": 3300
+      },
+      "exact": {
+        "accuracy": 0.8196969696969697,
+        "balanced_accuracy_observed": 0.16666666666666666,
+        "macro_f1_observed": 0.1501526505689703,
+        "macro_f1_all_8": 0.11261448792672772,
+        "weighted_f1": 0.7384780359801176,
+        "mcc": 0.0
+      },
+      "binary_failure": {
+        "prevalence": 0.1803030303030303,
+        "accuracy": 0.8196969696969697,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mcc": 0.0,
+        "pr_auc": 0.1803030303030303,
+        "roc_auc": 0.5,
+        "brier": 0.1803030303030303
+      },
+      "per_class": {
+        "0": {
+          "meaning": "normal",
+          "support": 2705,
+          "precision": 0.8196969696969697,
+          "recall": 1.0,
+          "f1": 0.9009159034138218
+        },
+        "1": {
+          "meaning": "no plasma intersection",
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "2": {
+          "meaning": "crossed, no absorption",
+          "support": 50,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "3": {
+          "meaning": "plasma cutoff",
+          "support": 476,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "4": {
+          "meaning": "integrator failure",
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "8": {
+          "meaning": "boundary cutoff",
+          "support": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "10": {
+          "meaning": "invalid absorption point",
+          "support": 31,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "100": {
+          "meaning": "timeout / no output file",
+          "support": 28,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          2705,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          50,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          476,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          31,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "small": {
+    "validation": {
+      "n_samples": 3300,
+      "true_flag_counts": {
+        "0": 2415,
+        "1": 93,
+        "2": 94,
+        "3": 623,
+        "8": 26,
+        "10": 41,
+        "100": 8
+      },
+      "predicted_flag_counts": {
+        "0": 2145,
+        "1": 129,
+        "2": 145,
+        "3": 732,
+        "8": 50,
+        "10": 83,
+        "100": 16
+      },
+      "exact": {
+        "accuracy": 0.85,
+        "balanced_accuracy_observed": 0.5427378364739837,
+        "macro_f1_observed": 0.4721860283104218,
+        "macro_f1_all_8": 0.413162774771619,
+        "weighted_f1": 0.8654003055434388,
+        "mcc": 0.6969471948453715
+      },
+      "binary_failure": {
+        "prevalence": 0.2681818181818182,
+        "accuracy": 0.8915151515151515,
+        "balanced_accuracy": 0.9101308909709793,
+        "precision": 0.7281385281385281,
+        "recall": 0.9502824858757062,
+        "f1": 0.8245098039215686,
+        "mcc": 0.7618650299659399,
+        "pr_auc": 0.8333295160950779,
+        "roc_auc": 0.9532451369149969,
+        "brier": 0.09154904821691692
+      },
+      "per_class": {
+        "0": {
+          "meaning": "normal",
+          "support": 2415,
+          "precision": 0.9794871794871794,
+          "recall": 0.8699792960662526,
+          "f1": 0.9214912280701755
+        },
+        "1": {
+          "meaning": "no plasma intersection",
+          "support": 93,
+          "precision": 0.7054263565891473,
+          "recall": 0.978494623655914,
+          "f1": 0.8198198198198198
+        },
+        "2": {
+          "meaning": "crossed, no absorption",
+          "support": 94,
+          "precision": 0.1793103448275862,
+          "recall": 0.2765957446808511,
+          "f1": 0.2175732217573222
+        },
+        "3": {
+          "meaning": "plasma cutoff",
+          "support": 623,
+          "precision": 0.7691256830601093,
+          "recall": 0.9036918138041734,
+          "f1": 0.8309963099630996
+        },
+        "4": {
+          "meaning": "integrator failure",
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "8": {
+          "meaning": "boundary cutoff",
+          "support": 26,
+          "precision": 0.12,
+          "recall": 0.23076923076923078,
+          "f1": 0.15789473684210525
+        },
+        "10": {
+          "meaning": "invalid absorption point",
+          "support": 41,
+          "precision": 0.20481927710843373,
+          "recall": 0.4146341463414634,
+          "f1": 0.27419354838709675
+        },
+        "100": {
+          "meaning": "timeout / no output file",
+          "support": 8,
+          "precision": 0.0625,
+          "recall": 0.125,
+          "f1": 0.08333333333333333
+        }
+      },
+      "confusion_matrix": [
+        [
+          2101,
+          2,
+          84,
+          144,
+          0,
+          25,
+          46,
+          13
+        ],
+        [
+          0,
+          91,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          10,
+          18,
+          26,
+          19,
+          0,
+          15,
+          6,
+          0
+        ],
+        [
+          16,
+          0,
+          28,
+          563,
+          0,
+          0,
+          14,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          18,
+          2,
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          4,
+          6,
+          0,
+          2,
+          17,
+          0
+        ],
+        [
+          6,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "test": {
+      "n_samples": 3300,
+      "true_flag_counts": {
+        "0": 2705,
+        "2": 50,
+        "3": 476,
+        "8": 10,
+        "10": 31,
+        "100": 28
+      },
+      "predicted_flag_counts": {
+        "0": 2604,
+        "2": 88,
+        "3": 518,
+        "8": 6,
+        "10": 65,
+        "100": 19
+      },
+      "exact": {
+        "accuracy": 0.9103030303030303,
+        "balanced_accuracy_observed": 0.5493657017991741,
+        "macro_f1_observed": 0.5186084377767359,
+        "macro_f1_all_8": 0.388956328332552,
+        "weighted_f1": 0.9165406840787284,
+        "mcc": 0.7312816044042216
+      },
+      "binary_failure": {
+        "prevalence": 0.1803030303030303,
+        "accuracy": 0.9342424242424242,
+        "balanced_accuracy": 0.9218704857173923,
+        "precision": 0.771551724137931,
+        "recall": 0.9025210084033614,
+        "f1": 0.8319132455460883,
+        "mcc": 0.7951080427013795,
+        "pr_auc": 0.9150868251289731,
+        "roc_auc": 0.9741539943149163,
+        "brier": 0.05344570754809219
+      },
+      "per_class": {
+        "0": {
+          "meaning": "normal",
+          "support": 2705,
+          "precision": 0.977726574500768,
+          "recall": 0.9412199630314233,
+          "f1": 0.9591260124317197
+        },
+        "1": {
+          "meaning": "no plasma intersection",
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "2": {
+          "meaning": "crossed, no absorption",
+          "support": 50,
+          "precision": 0.2840909090909091,
+          "recall": 0.5,
+          "f1": 0.36231884057971014
+        },
+        "3": {
+          "meaning": "plasma cutoff",
+          "support": 476,
+          "precision": 0.7972972972972973,
+          "recall": 0.8676470588235294,
+          "f1": 0.8309859154929577
+        },
+        "4": {
+          "meaning": "integrator failure",
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "8": {
+          "meaning": "boundary cutoff",
+          "support": 10,
+          "precision": 0.8333333333333334,
+          "recall": 0.5,
+          "f1": 0.625
+        },
+        "10": {
+          "meaning": "invalid absorption point",
+          "support": 31,
+          "precision": 0.2153846153846154,
+          "recall": 0.45161290322580644,
+          "f1": 0.2916666666666667
+        },
+        "100": {
+          "meaning": "timeout / no output file",
+          "support": 28,
+          "precision": 0.05263157894736842,
+          "recall": 0.03571428571428571,
+          "f1": 0.0425531914893617
+        }
+      },
+      "confusion_matrix": [
+        [
+          2546,
+          0,
+          35,
+          76,
+          0,
+          0,
+          30,
+          18
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          25,
+          19,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          19,
+          0,
+          25,
+          413,
+          0,
+          1,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          5,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          3,
+          5,
+          0,
+          0,
+          14,
+          0
+        ],
+        [
+          25,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1
+        ]
+      ]
+    },
+    "cluster_bootstrap_95_ci": {
+      "exact_accuracy": {
+        "lower_95": 0.8942424242424243,
+        "upper_95": 0.9275833333333333
+      },
+      "macro_f1_observed": {
+        "lower_95": 0.44688426418548866,
+        "upper_95": 0.563401809142331
+      },
+      "failure_f1": {
+        "lower_95": 0.7406542842553581,
+        "upper_95": 0.8840692981664025
+      },
+      "failure_pr_auc": {
+        "lower_95": 0.8249092304530881,
+        "upper_95": 0.9562424906577244
+      }
+    },
+    "per_shot_test": {
+      "85933": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 137,
+          "2": 8,
+          "3": 143,
+          "8": 10,
+          "10": 2
+        },
+        "predicted_flag_counts": {
+          "0": 133,
+          "2": 17,
+          "3": 143,
+          "8": 6,
+          "10": 1
+        },
+        "exact": {
+          "accuracy": 0.88,
+          "balanced_accuracy_observed": 0.7336442754325966,
+          "macro_f1_observed": 0.7316594146594146,
+          "macro_f1_all_8": 0.4572871341621341,
+          "weighted_f1": 0.8830012345679011,
+          "mcc": 0.789694429303611
+        },
+        "binary_failure": {
+          "prevalence": 0.5433333333333333,
+          "accuracy": 0.9266666666666666,
+          "balanced_accuracy": 0.9249473825623573,
+          "precision": 0.9221556886227545,
+          "recall": 0.9447852760736196,
+          "f1": 0.9333333333333333,
+          "mcc": 0.8521875477586776,
+          "pr_auc": 0.980334859051531,
+          "roc_auc": 0.98159509202454,
+          "brier": 0.0534638359174253
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 137,
+            "precision": 0.9323308270676691,
+            "recall": 0.9051094890510949,
+            "f1": 0.9185185185185185
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 8,
+            "precision": 0.4117647058823529,
+            "recall": 0.875,
+            "f1": 0.56
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 143,
+            "precision": 0.8881118881118881,
+            "recall": 0.8881118881118881,
+            "f1": 0.8881118881118881
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 10,
+            "precision": 0.8333333333333334,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 2,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            124,
+            0,
+            3,
+            10,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            7,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            7,
+            127,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            5,
+            0,
+            5,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "85935": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 291,
+          "3": 4,
+          "10": 1,
+          "100": 4
+        },
+        "predicted_flag_counts": {
+          "0": 289,
+          "2": 3,
+          "3": 1,
+          "10": 6,
+          "100": 1
+        },
+        "exact": {
+          "accuracy": 0.9666666666666667,
+          "balanced_accuracy_observed": 0.6215635738831615,
+          "macro_f1_observed": 0.5188423645320197,
+          "macro_f1_all_8": 0.25942118226600985,
+          "weighted_f1": 0.971584564860427,
+          "mcc": 0.49511967728210105
+        },
+        "binary_failure": {
+          "prevalence": 0.03,
+          "accuracy": 0.98,
+          "balanced_accuracy": 0.8820160366552119,
+          "precision": 0.6363636363636364,
+          "recall": 0.7777777777777778,
+          "f1": 0.7,
+          "mcc": 0.693480215491264,
+          "pr_auc": 0.5111760461760462,
+          "roc_auc": 0.877815960290187,
+          "brier": 0.018709498697613965
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 291,
+            "precision": 0.9930795847750865,
+            "recall": 0.9862542955326461,
+            "f1": 0.9896551724137931
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 4,
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 1,
+            "precision": 0.16666666666666666,
+            "recall": 1.0,
+            "f1": 0.2857142857142857
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 4,
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          }
+        },
+        "confusion_matrix": [
+          [
+            287,
+            0,
+            1,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      "85939": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 278,
+          "3": 3,
+          "100": 19
+        },
+        "predicted_flag_counts": {
+          "0": 290,
+          "10": 6,
+          "100": 4
+        },
+        "exact": {
+          "accuracy": 0.9066666666666666,
+          "balanced_accuracy_observed": 0.3261390887290168,
+          "macro_f1_observed": 0.3192488262910798,
+          "macro_f1_all_8": 0.11971830985915492,
+          "weighted_f1": 0.887511737089202,
+          "mcc": 0.10639019678490415
+        },
+        "binary_failure": {
+          "prevalence": 0.07333333333333333,
+          "accuracy": 0.92,
+          "balanced_accuracy": 0.5801177240026161,
+          "precision": 0.4,
+          "recall": 0.18181818181818182,
+          "f1": 0.25,
+          "mcc": 0.23269836850570397,
+          "pr_auc": 0.3806924632744304,
+          "roc_auc": 0.8358404185742315,
+          "brier": 0.05454606372325145
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 278,
+            "precision": 0.9379310344827586,
+            "recall": 0.9784172661870504,
+            "f1": 0.9577464788732394
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 19,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            272,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "85940": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 288,
+          "2": 2,
+          "3": 5,
+          "10": 4,
+          "100": 1
+        },
+        "predicted_flag_counts": {
+          "0": 277,
+          "2": 8,
+          "3": 1,
+          "10": 8,
+          "100": 6
+        },
+        "exact": {
+          "accuracy": 0.9366666666666666,
+          "balanced_accuracy_observed": 0.5809722222222222,
+          "macro_f1_observed": 0.4413569321533924,
+          "macro_f1_all_8": 0.27584808259587024,
+          "weighted_f1": 0.949402163225172,
+          "mcc": 0.46582991232065524
+        },
+        "binary_failure": {
+          "prevalence": 0.04,
+          "accuracy": 0.95,
+          "balanced_accuracy": 0.8940972222222223,
+          "precision": 0.43478260869565216,
+          "recall": 0.8333333333333334,
+          "f1": 0.5714285714285714,
+          "mcc": 0.5805189937444325,
+          "pr_auc": 0.5901803751803752,
+          "roc_auc": 0.900607638888889,
+          "brier": 0.03726223827264685
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 288,
+            "precision": 0.9927797833935018,
+            "recall": 0.9548611111111112,
+            "f1": 0.9734513274336283
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 2,
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 5,
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.3333333333333333
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 4,
+            "precision": 0.375,
+            "recall": 0.75,
+            "f1": 0.5
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            275,
+            0,
+            3,
+            0,
+            0,
+            0,
+            4,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "85941": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 246,
+          "2": 2,
+          "3": 45,
+          "10": 3,
+          "100": 4
+        },
+        "predicted_flag_counts": {
+          "0": 243,
+          "2": 2,
+          "3": 40,
+          "10": 12,
+          "100": 3
+        },
+        "exact": {
+          "accuracy": 0.9333333333333333,
+          "balanced_accuracy_observed": 0.6001626016260162,
+          "macro_f1_observed": 0.5315457716829062,
+          "macro_f1_all_8": 0.3322161073018164,
+          "weighted_f1": 0.9418474678214844,
+          "mcc": 0.790508016505653
+        },
+        "binary_failure": {
+          "prevalence": 0.18,
+          "accuracy": 0.9566666666666667,
+          "balanced_accuracy": 0.9374435411020777,
+          "precision": 0.8596491228070176,
+          "recall": 0.9074074074074074,
+          "f1": 0.8828828828828829,
+          "mcc": 0.8567929277002074,
+          "pr_auc": 0.9625037525585833,
+          "roc_auc": 0.9911924119241193,
+          "brier": 0.031082570421790325
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 246,
+            "precision": 0.9794238683127572,
+            "recall": 0.967479674796748,
+            "f1": 0.9734151329243353
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 2,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 45,
+            "precision": 0.975,
+            "recall": 0.8666666666666667,
+            "f1": 0.9176470588235294
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 3,
+            "precision": 0.16666666666666666,
+            "recall": 0.6666666666666666,
+            "f1": 0.26666666666666666
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            238,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            39,
+            0,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "85942": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 253,
+          "2": 1,
+          "3": 42,
+          "10": 4
+        },
+        "predicted_flag_counts": {
+          "0": 240,
+          "2": 4,
+          "3": 43,
+          "10": 8,
+          "100": 5
+        },
+        "exact": {
+          "accuracy": 0.9333333333333333,
+          "balanced_accuracy_observed": 0.9554159608507434,
+          "macro_f1_observed": 0.7256930358350236,
+          "macro_f1_all_8": 0.3628465179175118,
+          "weighted_f1": 0.9463574487266171,
+          "mcc": 0.7896265644374627
+        },
+        "binary_failure": {
+          "prevalence": 0.15666666666666668,
+          "accuracy": 0.9433333333333334,
+          "balanced_accuracy": 0.9490791354806156,
+          "precision": 0.75,
+          "recall": 0.9574468085106383,
+          "f1": 0.8411214953271028,
+          "mcc": 0.816170356581831,
+          "pr_auc": 0.9474625200462685,
+          "roc_auc": 0.9902867715078632,
+          "brier": 0.039392110346356216
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 253,
+            "precision": 0.9916666666666667,
+            "recall": 0.9407114624505929,
+            "f1": 0.9655172413793104
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 1,
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 42,
+            "precision": 0.8604651162790697,
+            "recall": 0.8809523809523809,
+            "f1": 0.8705882352941177
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 4,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            238,
+            0,
+            2,
+            6,
+            0,
+            0,
+            2,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1,
+            37,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "89799": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 235,
+          "2": 12,
+          "3": 50,
+          "10": 3
+        },
+        "predicted_flag_counts": {
+          "0": 216,
+          "2": 26,
+          "3": 50,
+          "10": 8
+        },
+        "exact": {
+          "accuracy": 0.8666666666666667,
+          "balanced_accuracy_observed": 0.5763652482269503,
+          "macro_f1_observed": 0.532138522581398,
+          "macro_f1_all_8": 0.266069261290699,
+          "weighted_f1": 0.8878410549655736,
+          "mcc": 0.6799326271022325
+        },
+        "binary_failure": {
+          "prevalence": 0.21666666666666667,
+          "accuracy": 0.91,
+          "balanced_accuracy": 0.9202945990180033,
+          "precision": 0.7261904761904762,
+          "recall": 0.9384615384615385,
+          "f1": 0.8187919463087249,
+          "mcc": 0.7712725869444872,
+          "pr_auc": 0.899980672318837,
+          "roc_auc": 0.9719803600654664,
+          "brier": 0.07188475661632253
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 235,
+            "precision": 0.9814814814814815,
+            "recall": 0.902127659574468,
+            "f1": 0.9401330376940134
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 12,
+            "precision": 0.2692307692307692,
+            "recall": 0.5833333333333334,
+            "f1": 0.3684210526315789
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 50,
+            "precision": 0.82,
+            "recall": 0.82,
+            "f1": 0.82
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            212,
+            0,
+            14,
+            4,
+            0,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            7,
+            4,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            3,
+            0,
+            4,
+            41,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "89802": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 207,
+          "2": 10,
+          "3": 79,
+          "10": 4
+        },
+        "predicted_flag_counts": {
+          "0": 201,
+          "2": 26,
+          "3": 73
+        },
+        "exact": {
+          "accuracy": 0.9033333333333333,
+          "balanced_accuracy_observed": 0.6308185042499846,
+          "macro_f1_observed": 0.5652304781561748,
+          "macro_f1_all_8": 0.2826152390780874,
+          "weighted_f1": 0.9116832932003209,
+          "mcc": 0.7983255215304164
+        },
+        "binary_failure": {
+          "prevalence": 0.31,
+          "accuracy": 0.9333333333333333,
+          "balanced_accuracy": 0.9309646252142746,
+          "precision": 0.8686868686868687,
+          "recall": 0.9247311827956989,
+          "f1": 0.8958333333333334,
+          "mcc": 0.8477789717858704,
+          "pr_auc": 0.9460929960638242,
+          "roc_auc": 0.9781829515349852,
+          "brier": 0.07121163451360388
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 207,
+            "precision": 0.9651741293532339,
+            "recall": 0.9371980676328503,
+            "f1": 0.9509803921568627
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 10,
+            "precision": 0.2692307692307692,
+            "recall": 0.7,
+            "f1": 0.3888888888888889
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 79,
+            "precision": 0.958904109589041,
+            "recall": 0.8860759493670886,
+            "f1": 0.9210526315789473
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            194,
+            0,
+            10,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            7,
+            70,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "89818": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 267,
+          "2": 2,
+          "3": 27,
+          "10": 4
+        },
+        "predicted_flag_counts": {
+          "0": 250,
+          "2": 1,
+          "3": 42,
+          "10": 7
+        },
+        "exact": {
+          "accuracy": 0.9033333333333333,
+          "balanced_accuracy_observed": 0.5067363712026633,
+          "macro_f1_observed": 0.45099935525467444,
+          "macro_f1_all_8": 0.22549967762733722,
+          "weighted_f1": 0.9128304319793682,
+          "mcc": 0.6231968299667996
+        },
+        "binary_failure": {
+          "prevalence": 0.11,
+          "accuracy": 0.9233333333333333,
+          "balanced_accuracy": 0.9170922710248552,
+          "precision": 0.6,
+          "recall": 0.9090909090909091,
+          "f1": 0.7228915662650602,
+          "mcc": 0.7003574164133838,
+          "pr_auc": 0.9049163903851292,
+          "roc_auc": 0.9831460674157304,
+          "brier": 0.06543187614458497
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 267,
+            "precision": 0.988,
+            "recall": 0.9250936329588015,
+            "f1": 0.9555125725338491
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 27,
+            "precision": 0.5476190476190477,
+            "recall": 0.8518518518518519,
+            "f1": 0.6666666666666666
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 4,
+            "precision": 0.14285714285714285,
+            "recall": 0.25,
+            "f1": 0.18181818181818182
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            247,
+            0,
+            1,
+            16,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            23,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "89820": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 258,
+          "2": 8,
+          "3": 30,
+          "10": 4
+        },
+        "predicted_flag_counts": {
+          "0": 236,
+          "2": 1,
+          "3": 59,
+          "10": 4
+        },
+        "exact": {
+          "accuracy": 0.88,
+          "balanced_accuracy_observed": 0.5309108527131783,
+          "macro_f1_observed": 0.46226345357776466,
+          "macro_f1_all_8": 0.23113172678888233,
+          "weighted_f1": 0.8832387147644392,
+          "mcc": 0.6280201906950935
+        },
+        "binary_failure": {
+          "prevalence": 0.14,
+          "accuracy": 0.9133333333333333,
+          "balanced_accuracy": 0.9296788482834994,
+          "precision": 0.625,
+          "recall": 0.9523809523809523,
+          "f1": 0.7547169811320755,
+          "mcc": 0.7278845155727564,
+          "pr_auc": 0.8107880906064059,
+          "roc_auc": 0.9595791805094132,
+          "brier": 0.07943051264607416
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 258,
+            "precision": 0.9915254237288136,
+            "recall": 0.9069767441860465,
+            "f1": 0.9473684210526315
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 8,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 30,
+            "precision": 0.4915254237288136,
+            "recall": 0.9666666666666667,
+            "f1": 0.651685393258427
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 4,
+            "precision": 0.25,
+            "recall": 0.25,
+            "f1": 0.25
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            234,
+            0,
+            1,
+            21,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            7,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            29,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "89822": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 245,
+          "2": 5,
+          "3": 48,
+          "10": 2
+        },
+        "predicted_flag_counts": {
+          "0": 229,
+          "3": 66,
+          "10": 5
+        },
+        "exact": {
+          "accuracy": 0.9033333333333333,
+          "balanced_accuracy_observed": 0.5889668367346939,
+          "macro_f1_observed": 0.5061387646331017,
+          "macro_f1_all_8": 0.25306938231655085,
+          "weighted_f1": 0.9035370070746486,
+          "mcc": 0.7270232667377392
+        },
+        "binary_failure": {
+          "prevalence": 0.18333333333333332,
+          "accuracy": 0.92,
+          "balanced_accuracy": 0.9228200371057513,
+          "precision": 0.7183098591549296,
+          "recall": 0.9272727272727272,
+          "f1": 0.8095238095238095,
+          "mcc": 0.7698445277713843,
+          "pr_auc": 0.8964761020539428,
+          "roc_auc": 0.9750649350649351,
+          "brier": 0.06548768572934446
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 245,
+            "precision": 0.982532751091703,
+            "recall": 0.9183673469387755,
+            "f1": 0.9493670886075949
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 48,
+            "precision": 0.6818181818181818,
+            "recall": 0.9375,
+            "f1": 0.7894736842105263
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 2,
+            "precision": 0.2,
+            "recall": 0.5,
+            "f1": 0.2857142857142857
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            225,
+            0,
+            0,
+            16,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            45,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "best": {
+    "validation": {
+      "n_samples": 3300,
+      "true_flag_counts": {
+        "0": 2415,
+        "1": 93,
+        "2": 94,
+        "3": 623,
+        "8": 26,
+        "10": 41,
+        "100": 8
+      },
+      "predicted_flag_counts": {
+        "0": 2315,
+        "1": 105,
+        "2": 85,
+        "3": 698,
+        "8": 22,
+        "10": 71,
+        "100": 4
+      },
+      "exact": {
+        "accuracy": 0.906969696969697,
+        "balanced_accuracy_observed": 0.6123291187008361,
+        "macro_f1_observed": 0.5929624133735979,
+        "macro_f1_all_8": 0.5188421117018982,
+        "weighted_f1": 0.9093379162565884,
+        "mcc": 0.7927712289755128
+      },
+      "binary_failure": {
+        "prevalence": 0.2681818181818182,
+        "accuracy": 0.9381818181818182,
+        "balanced_accuracy": 0.9391514896304873,
+        "precision": 0.8456852791878172,
+        "recall": 0.9412429378531073,
+        "f1": 0.8909090909090909,
+        "mcc": 0.8503171645870014,
+        "pr_auc": 0.9536776792677832,
+        "roc_auc": 0.9828286018411295,
+        "brier": 0.052724717413907884
+      },
+      "per_class": {
+        "0": {
+          "meaning": "normal",
+          "support": 2415,
+          "precision": 0.9775377969762419,
+          "recall": 0.9370600414078675,
+          "f1": 0.9568710359408034
+        },
+        "1": {
+          "meaning": "no plasma intersection",
+          "support": 93,
+          "precision": 0.8285714285714286,
+          "recall": 0.9354838709677419,
+          "f1": 0.8787878787878788
+        },
+        "2": {
+          "meaning": "crossed, no absorption",
+          "support": 94,
+          "precision": 0.5058823529411764,
+          "recall": 0.4574468085106383,
+          "f1": 0.48044692737430167
+        },
+        "3": {
+          "meaning": "plasma cutoff",
+          "support": 623,
+          "precision": 0.8123209169054442,
+          "recall": 0.9101123595505618,
+          "f1": 0.858440575321726
+        },
+        "4": {
+          "meaning": "integrator failure",
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "8": {
+          "meaning": "boundary cutoff",
+          "support": 26,
+          "precision": 0.45454545454545453,
+          "recall": 0.38461538461538464,
+          "f1": 0.4166666666666667
+        },
+        "10": {
+          "meaning": "invalid absorption point",
+          "support": 41,
+          "precision": 0.30985915492957744,
+          "recall": 0.5365853658536586,
+          "f1": 0.39285714285714285
+        },
+        "100": {
+          "meaning": "timeout / no output file",
+          "support": 8,
+          "precision": 0.25,
+          "recall": 0.125,
+          "f1": 0.16666666666666666
+        }
+      },
+      "confusion_matrix": [
+        [
+          2263,
+          0,
+          16,
+          110,
+          0,
+          0,
+          23,
+          3
+        ],
+        [
+          0,
+          87,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          18,
+          7,
+          43,
+          15,
+          0,
+          6,
+          5,
+          0
+        ],
+        [
+          16,
+          0,
+          19,
+          567,
+          0,
+          0,
+          21,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          11,
+          2,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          5,
+          6,
+          0,
+          0,
+          22,
+          0
+        ],
+        [
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "test": {
+      "n_samples": 3300,
+      "true_flag_counts": {
+        "0": 2705,
+        "2": 50,
+        "3": 476,
+        "8": 10,
+        "10": 31,
+        "100": 28
+      },
+      "predicted_flag_counts": {
+        "0": 2708,
+        "2": 52,
+        "3": 462,
+        "10": 70,
+        "100": 8
+      },
+      "exact": {
+        "accuracy": 0.9418181818181818,
+        "balanced_accuracy_observed": 0.48948348798704977,
+        "macro_f1_observed": 0.45602339768915406,
+        "macro_f1_all_8": 0.3420175482668656,
+        "weighted_f1": 0.94119886885458,
+        "mcc": 0.8105677616259976
+      },
+      "binary_failure": {
+        "prevalence": 0.1803030303030303,
+        "accuracy": 0.9633333333333334,
+        "balanced_accuracy": 0.9369934295344755,
+        "precision": 0.9003378378378378,
+        "recall": 0.8957983193277311,
+        "f1": 0.8980623420387531,
+        "mcc": 0.875713080935741,
+        "pr_auc": 0.9706742092065397,
+        "roc_auc": 0.992209882104413,
+        "brier": 0.028107323603307265
+      },
+      "per_class": {
+        "0": {
+          "meaning": "normal",
+          "support": 2705,
+          "precision": 0.9771048744460856,
+          "recall": 0.97818853974122,
+          "f1": 0.9776464067984482
+        },
+        "1": {
+          "meaning": "no plasma intersection",
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "2": {
+          "meaning": "crossed, no absorption",
+          "support": 50,
+          "precision": 0.4423076923076923,
+          "recall": 0.46,
+          "f1": 0.45098039215686275
+        },
+        "3": {
+          "meaning": "plasma cutoff",
+          "support": 476,
+          "precision": 0.9090909090909091,
+          "recall": 0.8823529411764706,
+          "f1": 0.8955223880597015
+        },
+        "4": {
+          "meaning": "integrator failure",
+          "support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "8": {
+          "meaning": "boundary cutoff",
+          "support": 10,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "10": {
+          "meaning": "invalid absorption point",
+          "support": 31,
+          "precision": 0.2571428571428571,
+          "recall": 0.5806451612903226,
+          "f1": 0.3564356435643564
+        },
+        "100": {
+          "meaning": "timeout / no output file",
+          "support": 28,
+          "precision": 0.125,
+          "recall": 0.03571428571428571,
+          "f1": 0.05555555555555555
+        }
+      },
+      "confusion_matrix": [
+        [
+          2646,
+          0,
+          7,
+          17,
+          0,
+          0,
+          28,
+          7
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          23,
+          11,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          18,
+          0,
+          19,
+          420,
+          0,
+          0,
+          19,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          3,
+          4,
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          26,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    "cluster_bootstrap_95_ci": {
+      "exact_accuracy": {
+        "lower_95": 0.9257575757575758,
+        "upper_95": 0.9578787878787879
+      },
+      "macro_f1_observed": {
+        "lower_95": 0.43180359210105174,
+        "upper_95": 0.5734892269132341
+      },
+      "failure_f1": {
+        "lower_95": 0.8074144837543559,
+        "upper_95": 0.9426458819661897
+      },
+      "failure_pr_auc": {
+        "lower_95": 0.9156351770709875,
+        "upper_95": 0.9893129937027699
+      }
+    },
+    "per_shot_test": {
+      "85933": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 137,
+          "2": 8,
+          "3": 143,
+          "8": 10,
+          "10": 2
+        },
+        "predicted_flag_counts": {
+          "0": 143,
+          "2": 14,
+          "3": 139,
+          "10": 4
+        },
+        "exact": {
+          "accuracy": 0.91,
+          "balanced_accuracy_observed": 0.7525611250063805,
+          "macro_f1_observed": 0.6364520585797181,
+          "macro_f1_all_8": 0.3977825366123238,
+          "weighted_f1": 0.8977518651561205,
+          "mcc": 0.8409401006616767
+        },
+        "binary_failure": {
+          "prevalence": 0.5433333333333333,
+          "accuracy": 0.9733333333333334,
+          "balanced_accuracy": 0.9748779723254668,
+          "precision": 0.9936305732484076,
+          "recall": 0.9570552147239264,
+          "f1": 0.975,
+          "mcc": 0.947214333713037,
+          "pr_auc": 0.9990658162032371,
+          "roc_auc": 0.9988804800501545,
+          "brier": 0.01845316097320784
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 137,
+            "precision": 0.951048951048951,
+            "recall": 0.9927007299270073,
+            "f1": 0.9714285714285714
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 8,
+            "precision": 0.5,
+            "recall": 0.875,
+            "f1": 0.6363636363636364
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 143,
+            "precision": 0.920863309352518,
+            "recall": 0.8951048951048951,
+            "f1": 0.9078014184397163
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 2,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            136,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            7,
+            128,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "85935": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 291,
+          "3": 4,
+          "10": 1,
+          "100": 4
+        },
+        "predicted_flag_counts": {
+          "0": 293,
+          "2": 1,
+          "3": 1,
+          "10": 4,
+          "100": 1
+        },
+        "exact": {
+          "accuracy": 0.97,
+          "balanced_accuracy_observed": 0.37328178694158076,
+          "macro_f1_observed": 0.4474315068493151,
+          "macro_f1_all_8": 0.22371575342465755,
+          "weighted_f1": 0.9707009132420091,
+          "mcc": 0.43329261969646515
+        },
+        "binary_failure": {
+          "prevalence": 0.03,
+          "accuracy": 0.98,
+          "balanced_accuracy": 0.7743413516609393,
+          "precision": 0.7142857142857143,
+          "recall": 0.5555555555555556,
+          "f1": 0.625,
+          "mcc": 0.6200206994993588,
+          "pr_auc": 0.7171818434976329,
+          "roc_auc": 0.9877815960290187,
+          "brier": 0.017936090207184816
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 291,
+            "precision": 0.9863481228668942,
+            "recall": 0.993127147766323,
+            "f1": 0.9897260273972602
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 4,
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 4,
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          }
+        },
+        "confusion_matrix": [
+          [
+            289,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      "85939": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 278,
+          "3": 3,
+          "100": 19
+        },
+        "predicted_flag_counts": {
+          "0": 290,
+          "2": 1,
+          "10": 3,
+          "100": 6
+        },
+        "exact": {
+          "accuracy": 0.9,
+          "balanced_accuracy_observed": 0.3237410071942446,
+          "macro_f1_observed": 0.3169014084507042,
+          "macro_f1_all_8": 0.11883802816901408,
+          "weighted_f1": 0.8809859154929577,
+          "mcc": 0.031289032996873446
+        },
+        "binary_failure": {
+          "prevalence": 0.07333333333333333,
+          "accuracy": 0.9066666666666666,
+          "balanced_accuracy": 0.5310660562459123,
+          "precision": 0.2,
+          "recall": 0.09090909090909091,
+          "f1": 0.125,
+          "mcc": 0.09022997962466073,
+          "pr_auc": 0.41081634778045545,
+          "roc_auc": 0.9319816873773707,
+          "brier": 0.06182842018916568
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 278,
+            "precision": 0.9310344827586207,
+            "recall": 0.9712230215827338,
+            "f1": 0.9507042253521126
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 19,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            270,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            19,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "85940": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 288,
+          "2": 2,
+          "3": 5,
+          "10": 4,
+          "100": 1
+        },
+        "predicted_flag_counts": {
+          "0": 287,
+          "2": 1,
+          "3": 6,
+          "10": 5,
+          "100": 1
+        },
+        "exact": {
+          "accuracy": 0.96,
+          "balanced_accuracy_observed": 0.45583333333333337,
+          "macro_f1_observed": 0.4305173473869126,
+          "macro_f1_all_8": 0.2690733421168204,
+          "weighted_f1": 0.9596819206558337,
+          "mcc": 0.5067508367968905
+        },
+        "binary_failure": {
+          "prevalence": 0.04,
+          "accuracy": 0.9633333333333334,
+          "balanced_accuracy": 0.78125,
+          "precision": 0.5384615384615384,
+          "recall": 0.5833333333333334,
+          "f1": 0.56,
+          "mcc": 0.5413732204465521,
+          "pr_auc": 0.7270871285705974,
+          "roc_auc": 0.9814814814814815,
+          "brier": 0.024350705428707996
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 288,
+            "precision": 0.9825783972125436,
+            "recall": 0.9791666666666666,
+            "f1": 0.9808695652173913
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 5,
+            "precision": 0.6666666666666666,
+            "recall": 0.8,
+            "f1": 0.7272727272727273
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 4,
+            "precision": 0.4,
+            "recall": 0.5,
+            "f1": 0.4444444444444444
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            282,
+            0,
+            1,
+            1,
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "85941": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 246,
+          "2": 2,
+          "3": 45,
+          "10": 3,
+          "100": 4
+        },
+        "predicted_flag_counts": {
+          "0": 247,
+          "2": 2,
+          "3": 44,
+          "10": 7
+        },
+        "exact": {
+          "accuracy": 0.96,
+          "balanced_accuracy_observed": 0.6834146341463414,
+          "macro_f1_observed": 0.6051129293251589,
+          "macro_f1_all_8": 0.3781955808282244,
+          "weighted_f1": 0.9559367930046875,
+          "mcc": 0.868376345309265
+        },
+        "binary_failure": {
+          "prevalence": 0.18,
+          "accuracy": 0.97,
+          "balanced_accuracy": 0.9455736224028908,
+          "precision": 0.9245283018867925,
+          "recall": 0.9074074074074074,
+          "f1": 0.9158878504672897,
+          "mcc": 0.8976922808292018,
+          "pr_auc": 0.9752494535266587,
+          "roc_auc": 0.9926979825353809,
+          "brier": 0.024972999632982683
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 246,
+            "precision": 0.979757085020243,
+            "recall": 0.983739837398374,
+            "f1": 0.9817444219066938
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 2,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 45,
+            "precision": 0.9545454545454546,
+            "recall": 0.9333333333333333,
+            "f1": 0.9438202247191011
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 3,
+            "precision": 0.42857142857142855,
+            "recall": 1.0,
+            "f1": 0.6
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            242,
+            0,
+            1,
+            2,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            42,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "85942": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 253,
+          "2": 1,
+          "3": 42,
+          "10": 4
+        },
+        "predicted_flag_counts": {
+          "0": 246,
+          "2": 2,
+          "3": 44,
+          "10": 8
+        },
+        "exact": {
+          "accuracy": 0.9633333333333334,
+          "balanced_accuracy_observed": 0.9176900997553171,
+          "macro_f1_observed": 0.7697157881654783,
+          "macro_f1_all_8": 0.3848578940827391,
+          "weighted_f1": 0.9672443595200737,
+          "mcc": 0.875423455602199
+        },
+        "binary_failure": {
+          "prevalence": 0.15666666666666668,
+          "accuracy": 0.97,
+          "balanced_accuracy": 0.9735514254478177,
+          "precision": 0.8518518518518519,
+          "recall": 0.9787234042553191,
+          "f1": 0.9108910891089109,
+          "mcc": 0.8960699224059518,
+          "pr_auc": 0.9737305519543549,
+          "roc_auc": 0.9947018753679253,
+          "brier": 0.025542664558277927
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 253,
+            "precision": 0.9959349593495935,
+            "recall": 0.9683794466403162,
+            "f1": 0.9819639278557114
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 1,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 42,
+            "precision": 0.9090909090909091,
+            "recall": 0.9523809523809523,
+            "f1": 0.9302325581395349
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 4,
+            "precision": 0.375,
+            "recall": 0.75,
+            "f1": 0.5
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            245,
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            40,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "89799": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 235,
+          "2": 12,
+          "3": 50,
+          "10": 3
+        },
+        "predicted_flag_counts": {
+          "0": 222,
+          "2": 19,
+          "3": 48,
+          "10": 11
+        },
+        "exact": {
+          "accuracy": 0.9033333333333333,
+          "balanced_accuracy_observed": 0.6901063829787234,
+          "macro_f1_observed": 0.6157245279702902,
+          "macro_f1_all_8": 0.3078622639851451,
+          "weighted_f1": 0.9191516886277346,
+          "mcc": 0.758306578669717
+        },
+        "binary_failure": {
+          "prevalence": 0.21666666666666667,
+          "accuracy": 0.95,
+          "balanced_accuracy": 0.9625204582651392,
+          "precision": 0.8205128205128205,
+          "recall": 0.9846153846153847,
+          "f1": 0.8951048951048951,
+          "mcc": 0.8688159071613857,
+          "pr_auc": 0.9868572954852177,
+          "roc_auc": 0.9960065466448446,
+          "brier": 0.04044754278559821
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 235,
+            "precision": 0.9954954954954955,
+            "recall": 0.9404255319148936,
+            "f1": 0.9671772428884027
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 12,
+            "precision": 0.42105263157894735,
+            "recall": 0.6666666666666666,
+            "f1": 0.5161290322580645
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 50,
+            "precision": 0.8541666666666666,
+            "recall": 0.82,
+            "f1": 0.8367346938775511
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 3,
+            "precision": 0.09090909090909091,
+            "recall": 0.3333333333333333,
+            "f1": 0.14285714285714285
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            221,
+            0,
+            4,
+            3,
+            0,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            3,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            6,
+            41,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "89802": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 207,
+          "2": 10,
+          "3": 79,
+          "10": 4
+        },
+        "predicted_flag_counts": {
+          "0": 209,
+          "2": 7,
+          "3": 75,
+          "10": 9
+        },
+        "exact": {
+          "accuracy": 0.9133333333333333,
+          "balanced_accuracy_observed": 0.5767726105301779,
+          "macro_f1_observed": 0.5661443336075689,
+          "macro_f1_all_8": 0.28307216680378444,
+          "weighted_f1": 0.9160672048539695,
+          "mcc": 0.8089218391077447
+        },
+        "binary_failure": {
+          "prevalence": 0.31,
+          "accuracy": 0.9533333333333334,
+          "balanced_accuracy": 0.9424964936886395,
+          "precision": 0.9340659340659341,
+          "recall": 0.9139784946236559,
+          "f1": 0.9239130434782609,
+          "mcc": 0.8903743435971103,
+          "pr_auc": 0.9842486620270268,
+          "roc_auc": 0.992831541218638,
+          "brier": 0.034816885868259144
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 207,
+            "precision": 0.9617224880382775,
+            "recall": 0.9710144927536232,
+            "f1": 0.9663461538461539
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 10,
+            "precision": 0.2857142857142857,
+            "recall": 0.2,
+            "f1": 0.23529411764705882
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 79,
+            "precision": 0.9333333333333333,
+            "recall": 0.8860759493670886,
+            "f1": 0.9090909090909091
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 4,
+            "precision": 0.1111111111111111,
+            "recall": 0.25,
+            "f1": 0.15384615384615385
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            201,
+            0,
+            0,
+            4,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            2,
+            1,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            4,
+            70,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "89818": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 267,
+          "2": 2,
+          "3": 27,
+          "10": 4
+        },
+        "predicted_flag_counts": {
+          "0": 269,
+          "3": 26,
+          "10": 5
+        },
+        "exact": {
+          "accuracy": 0.9666666666666667,
+          "balanced_accuracy_observed": 0.5944132334581773,
+          "macro_f1_observed": 0.5837948621671516,
+          "macro_f1_all_8": 0.2918974310835758,
+          "weighted_f1": 0.9641517777986377,
+          "mcc": 0.828723560044998
+        },
+        "binary_failure": {
+          "prevalence": 0.11,
+          "accuracy": 0.9733333333333334,
+          "balanced_accuracy": 0.9186244467143343,
+          "precision": 0.9032258064516129,
+          "recall": 0.8484848484848485,
+          "f1": 0.875,
+          "mcc": 0.8606175456485172,
+          "pr_auc": 0.9759095619577978,
+          "roc_auc": 0.9968221541255249,
+          "brier": 0.016309289144237404
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 267,
+            "precision": 0.9814126394052045,
+            "recall": 0.9887640449438202,
+            "f1": 0.9850746268656716
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 27,
+            "precision": 0.9230769230769231,
+            "recall": 0.8888888888888888,
+            "f1": 0.9056603773584906
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 4,
+            "precision": 0.4,
+            "recall": 0.5,
+            "f1": 0.4444444444444444
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            264,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            24,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "89820": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 258,
+          "2": 8,
+          "3": 30,
+          "10": 4
+        },
+        "predicted_flag_counts": {
+          "0": 256,
+          "3": 37,
+          "10": 7
+        },
+        "exact": {
+          "accuracy": 0.96,
+          "balanced_accuracy_observed": 0.684593023255814,
+          "macro_f1_observed": 0.6082987080867329,
+          "macro_f1_all_8": 0.30414935404336646,
+          "weighted_f1": 0.9501323590748063,
+          "mcc": 0.8446053105609349
+        },
+        "binary_failure": {
+          "prevalence": 0.14,
+          "accuracy": 0.9866666666666667,
+          "balanced_accuracy": 0.982281284606866,
+          "precision": 0.9318181818181818,
+          "recall": 0.9761904761904762,
+          "f1": 0.9534883720930233,
+          "mcc": 0.9460597850868744,
+          "pr_auc": 0.9817203564592809,
+          "roc_auc": 0.997046880767811,
+          "brier": 0.01977426567525413
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 258,
+            "precision": 0.99609375,
+            "recall": 0.9883720930232558,
+            "f1": 0.9922178988326849
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 8,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 30,
+            "precision": 0.8108108108108109,
+            "recall": 1.0,
+            "f1": 0.8955223880597015
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 4,
+            "precision": 0.42857142857142855,
+            "recall": 0.75,
+            "f1": 0.5454545454545454
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            255,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            6,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            30,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "89822": {
+        "n_samples": 300,
+        "true_flag_counts": {
+          "0": 245,
+          "2": 5,
+          "3": 48,
+          "10": 2
+        },
+        "predicted_flag_counts": {
+          "0": 246,
+          "2": 5,
+          "3": 42,
+          "10": 7
+        },
+        "exact": {
+          "accuracy": 0.9533333333333334,
+          "balanced_accuracy_observed": 0.7792517006802722,
+          "macro_f1_observed": 0.7231952930527269,
+          "macro_f1_all_8": 0.36159764652636345,
+          "weighted_f1": 0.9587342536018709,
+          "mcc": 0.8491896998060173
+        },
+        "binary_failure": {
+          "prevalence": 0.18333333333333332,
+          "accuracy": 0.97,
+          "balanced_accuracy": 0.946382189239332,
+          "precision": 0.9259259259259259,
+          "recall": 0.9090909090909091,
+          "f1": 0.9174311926605505,
+          "mcc": 0.8991596445169165,
+          "pr_auc": 0.980808821878602,
+          "roc_auc": 0.9941372912801484,
+          "brier": 0.02474853517350408
+        },
+        "per_class": {
+          "0": {
+            "meaning": "normal",
+            "support": 245,
+            "precision": 0.9796747967479674,
+            "recall": 0.9836734693877551,
+            "f1": 0.9816700610997964
+          },
+          "1": {
+            "meaning": "no plasma intersection",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "2": {
+            "meaning": "crossed, no absorption",
+            "support": 5,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8
+          },
+          "3": {
+            "meaning": "plasma cutoff",
+            "support": 48,
+            "precision": 0.9523809523809523,
+            "recall": 0.8333333333333334,
+            "f1": 0.8888888888888888
+          },
+          "4": {
+            "meaning": "integrator failure",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "8": {
+            "meaning": "boundary cutoff",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "10": {
+            "meaning": "invalid absorption point",
+            "support": 2,
+            "precision": 0.14285714285714285,
+            "recall": 0.5,
+            "f1": 0.2222222222222222
+          },
+          "100": {
+            "meaning": "timeout / no output file",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            241,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            40,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "artifact_bytes": {
+    "small_decision_tree_evaluation.joblib": 20192,
+    "small_decision_tree.joblib": 21250,
+    "best_profile_mlp_evaluation.pt": 555156,
+    "best_profile_mlp.pt": 554625
+  }
+}

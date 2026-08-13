@@ -1,0 +1,2113 @@
+{
+  "target_mapping": {
+    "normal": [
+      0
+    ],
+    "no intersection": [
+      1
+    ],
+    "crossed, no absorption": [
+      2
+    ],
+    "cutoff": [
+      3,
+      8
+    ],
+    "failed run": [
+      4,
+      7,
+      10,
+      100
+    ]
+  },
+  "selection_metric": "five-class macro F1 on the validation frames",
+  "test_access_policy": "This script never accesses a test_* array. The chosen configurations are serialized before evaluate_grouped.py reads the test split.",
+  "small_tree": {
+    "model": "small_tree",
+    "class_weight_power": 0.2,
+    "non_normal_probability_scale": 1.0000000000000007,
+    "fit_seconds": 4.594443763000527,
+    "node_count": 371,
+    "depth": 8,
+    "validation": {
+      "n_samples": 3300,
+      "true_group_counts": {
+        "normal": 2415,
+        "no intersection": 93,
+        "crossed, no absorption": 94,
+        "cutoff": 649,
+        "failed run": 49
+      },
+      "predicted_group_counts": {
+        "normal": 2319,
+        "no intersection": 140,
+        "crossed, no absorption": 146,
+        "cutoff": 638,
+        "failed run": 57
+      },
+      "grouped": {
+        "accuracy": 0.883030303030303,
+        "balanced_accuracy_observed": 0.6886609560939879,
+        "macro_f1_observed": 0.6322403826880368,
+        "macro_f1_all_5": 0.6322403826880368,
+        "weighted_f1": 0.8897400709499368,
+        "mcc": 0.7390145563370317,
+        "observed_group_count": 5
+      },
+      "non_normal": {
+        "prevalence": 0.2681818181818182,
+        "accuracy": 0.9175757575757576,
+        "balanced_accuracy": 0.9121872477804682,
+        "precision": 0.8124362895005097,
+        "recall": 0.9005649717514125,
+        "f1": 0.8542336548767417,
+        "mcc": 0.7990424863063076,
+        "pr_auc": 0.855205633029986,
+        "roc_auc": 0.9612363874559895,
+        "brier": 0.06824579563241472
+      },
+      "per_group": {
+        "normal": {
+          "group_id": 0,
+          "source_flags": [
+            0
+          ],
+          "support": 2415,
+          "precision": 0.9620526088831393,
+          "recall": 0.9238095238095239,
+          "f1": 0.9425433037600338,
+          "pr_auc": 0.9830635209298242,
+          "roc_auc": 0.9612340480284476
+        },
+        "no intersection": {
+          "group_id": 1,
+          "source_flags": [
+            1
+          ],
+          "support": 93,
+          "precision": 0.6571428571428571,
+          "recall": 0.989247311827957,
+          "f1": 0.7896995708154506,
+          "pr_auc": 0.7601338501478202,
+          "roc_auc": 0.9901693540004896
+        },
+        "crossed, no absorption": {
+          "group_id": 2,
+          "source_flags": [
+            2
+          ],
+          "support": 94,
+          "precision": 0.2534246575342466,
+          "recall": 0.39361702127659576,
+          "f1": 0.30833333333333335,
+          "pr_auc": 0.2020712284414893,
+          "roc_auc": 0.793756055799631
+        },
+        "cutoff": {
+          "group_id": 3,
+          "source_flags": [
+            3,
+            8
+          ],
+          "support": 649,
+          "precision": 0.8448275862068966,
+          "recall": 0.8305084745762712,
+          "f1": 0.8376068376068376,
+          "pr_auc": 0.8640718058790176,
+          "roc_auc": 0.9615396463467867
+        },
+        "failed run": {
+          "group_id": 4,
+          "source_flags": [
+            4,
+            7,
+            10,
+            100
+          ],
+          "support": 49,
+          "precision": 0.2631578947368421,
+          "recall": 0.30612244897959184,
+          "f1": 0.2830188679245283,
+          "pr_auc": 0.14970163609735612,
+          "roc_auc": 0.7782785830419525
+        }
+      },
+      "confusion_matrix": [
+        [
+          2231,
+          3,
+          73,
+          77,
+          31
+        ],
+        [
+          0,
+          92,
+          1,
+          0,
+          0
+        ],
+        [
+          20,
+          22,
+          37,
+          14,
+          1
+        ],
+        [
+          49,
+          22,
+          29,
+          539,
+          10
+        ],
+        [
+          19,
+          1,
+          6,
+          8,
+          15
+        ]
+      ]
+    }
+  },
+  "best_profile_mlp": {
+    "model": "profile_mlp",
+    "class_weight_power": 0.25,
+    "non_normal_probability_scale": 1.0250000000000008,
+    "best_epoch": 73,
+    "fit_seconds": 401.62894015000074,
+    "parameter_count": 131077,
+    "validation": {
+      "n_samples": 3300,
+      "true_group_counts": {
+        "normal": 2415,
+        "no intersection": 93,
+        "crossed, no absorption": 94,
+        "cutoff": 649,
+        "failed run": 49
+      },
+      "predicted_group_counts": {
+        "normal": 2329,
+        "no intersection": 103,
+        "crossed, no absorption": 118,
+        "cutoff": 717,
+        "failed run": 33
+      },
+      "grouped": {
+        "accuracy": 0.923030303030303,
+        "balanced_accuracy_observed": 0.7708574213188555,
+        "macro_f1_observed": 0.7535661874471499,
+        "macro_f1_all_5": 0.7535661874471499,
+        "weighted_f1": 0.9240578303778206,
+        "mcc": 0.8261185931858159,
+        "observed_group_count": 5
+      },
+      "non_normal": {
+        "prevalence": 0.2681818181818182,
+        "accuracy": 0.9454545454545454,
+        "balanced_accuracy": 0.9459100957995579,
+        "precision": 0.86302780638517,
+        "recall": 0.9468926553672317,
+        "f1": 0.9030172413793104,
+        "mcc": 0.8669881161249445,
+        "pr_auc": 0.9556293308603043,
+        "roc_auc": 0.983954802259887,
+        "brier": 0.04475131225471025
+      },
+      "per_group": {
+        "normal": {
+          "group_id": 0,
+          "source_flags": [
+            0
+          ],
+          "support": 2415,
+          "precision": 0.9798196650923143,
+          "recall": 0.9449275362318841,
+          "f1": 0.9620573355817875,
+          "pr_auc": 0.9941808956582513,
+          "roc_auc": 0.983954802259887
+        },
+        "no intersection": {
+          "group_id": 1,
+          "source_flags": [
+            1
+          ],
+          "support": 93,
+          "precision": 0.883495145631068,
+          "recall": 0.978494623655914,
+          "f1": 0.9285714285714286,
+          "pr_auc": 0.9874713440206552,
+          "roc_auc": 0.9996211244891048
+        },
+        "crossed, no absorption": {
+          "group_id": 2,
+          "source_flags": [
+            2
+          ],
+          "support": 94,
+          "precision": 0.5338983050847458,
+          "recall": 0.6702127659574468,
+          "f1": 0.5943396226415094,
+          "pr_auc": 0.612465310133606,
+          "roc_auc": 0.9717882693354215
+        },
+        "cutoff": {
+          "group_id": 3,
+          "source_flags": [
+            3,
+            8
+          ],
+          "support": 649,
+          "precision": 0.8270571827057183,
+          "recall": 0.9137134052388289,
+          "f1": 0.8682284040995608,
+          "pr_auc": 0.9394556088164763,
+          "roc_auc": 0.9844004559142435
+        },
+        "failed run": {
+          "group_id": 4,
+          "source_flags": [
+            4,
+            7,
+            10,
+            100
+          ],
+          "support": 49,
+          "precision": 0.5151515151515151,
+          "recall": 0.3469387755102041,
+          "f1": 0.4146341463414634,
+          "pr_auc": 0.306449138204746,
+          "roc_auc": 0.9210666733626702
+        }
+      },
+      "confusion_matrix": [
+        [
+          2282,
+          0,
+          22,
+          102,
+          9
+        ],
+        [
+          0,
+          91,
+          1,
+          1,
+          0
+        ],
+        [
+          17,
+          0,
+          63,
+          14,
+          0
+        ],
+        [
+          11,
+          12,
+          26,
+          593,
+          7
+        ],
+        [
+          19,
+          0,
+          6,
+          7,
+          17
+        ]
+      ]
+    }
+  },
+  "all_validation_candidates": [
+    {
+      "model": "small_tree",
+      "class_weight_power": 0.0,
+      "non_normal_probability_scale": 1.400000000000001,
+      "fit_seconds": 4.376503316000708,
+      "node_count": 341,
+      "depth": 8,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2294,
+          "no intersection": 127,
+          "crossed, no absorption": 150,
+          "cutoff": 703,
+          "failed run": 26
+        },
+        "grouped": {
+          "accuracy": 0.8866666666666667,
+          "balanced_accuracy_observed": 0.6569000339101053,
+          "macro_f1_observed": 0.6095139544272885,
+          "macro_f1_all_5": 0.6095139544272885,
+          "weighted_f1": 0.8903244006998936,
+          "mcc": 0.7490171831503857,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.9184848484848485,
+          "balanced_accuracy": 0.9178194195880267,
+          "precision": 0.8061630218687873,
+          "recall": 0.9163841807909604,
+          "f1": 0.8577472236911687,
+          "mcc": 0.8041797312757694,
+          "pr_auc": 0.8562958456514695,
+          "roc_auc": 0.962221754336714,
+          "brier": 0.06517111781682296
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.967741935483871,
+            "recall": 0.9192546583850931,
+            "f1": 0.9428753450838819,
+            "pr_auc": 0.9828035640748294,
+            "roc_auc": 0.9622217543367138
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.7007874015748031,
+            "recall": 0.956989247311828,
+            "f1": 0.8090909090909091,
+            "pr_auc": 0.7656596901897893,
+            "roc_auc": 0.9954350530258071
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.28,
+            "recall": 0.44680851063829785,
+            "f1": 0.3442622950819672,
+            "pr_auc": 0.23976451782130184,
+            "roc_auc": 0.826235051300089
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8122332859174964,
+            "recall": 0.8798151001540832,
+            "f1": 0.8446745562130178,
+            "pr_auc": 0.8552911825174674,
+            "roc_auc": 0.9638706561294135
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.15384615384615385,
+            "recall": 0.08163265306122448,
+            "f1": 0.10666666666666667,
+            "pr_auc": 0.13614197406943332,
+            "roc_auc": 0.7616714480316887
+          }
+        },
+        "confusion_matrix": [
+          [
+            2220,
+            2,
+            76,
+            98,
+            19
+          ],
+          [
+            0,
+            89,
+            4,
+            0,
+            0
+          ],
+          [
+            14,
+            18,
+            42,
+            20,
+            0
+          ],
+          [
+            36,
+            18,
+            21,
+            571,
+            3
+          ],
+          [
+            24,
+            0,
+            7,
+            14,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "model": "small_tree",
+      "class_weight_power": 0.2,
+      "non_normal_probability_scale": 1.0000000000000007,
+      "fit_seconds": 4.594443763000527,
+      "node_count": 371,
+      "depth": 8,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2319,
+          "no intersection": 140,
+          "crossed, no absorption": 146,
+          "cutoff": 638,
+          "failed run": 57
+        },
+        "grouped": {
+          "accuracy": 0.883030303030303,
+          "balanced_accuracy_observed": 0.6886609560939879,
+          "macro_f1_observed": 0.6322403826880368,
+          "macro_f1_all_5": 0.6322403826880368,
+          "weighted_f1": 0.8897400709499368,
+          "mcc": 0.7390145563370317,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.9175757575757576,
+          "balanced_accuracy": 0.9121872477804682,
+          "precision": 0.8124362895005097,
+          "recall": 0.9005649717514125,
+          "f1": 0.8542336548767417,
+          "mcc": 0.7990424863063076,
+          "pr_auc": 0.855205633029986,
+          "roc_auc": 0.9612363874559895,
+          "brier": 0.06824579563241472
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.9620526088831393,
+            "recall": 0.9238095238095239,
+            "f1": 0.9425433037600338,
+            "pr_auc": 0.9830635209298242,
+            "roc_auc": 0.9612340480284476
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.6571428571428571,
+            "recall": 0.989247311827957,
+            "f1": 0.7896995708154506,
+            "pr_auc": 0.7601338501478202,
+            "roc_auc": 0.9901693540004896
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.2534246575342466,
+            "recall": 0.39361702127659576,
+            "f1": 0.30833333333333335,
+            "pr_auc": 0.2020712284414893,
+            "roc_auc": 0.793756055799631
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8448275862068966,
+            "recall": 0.8305084745762712,
+            "f1": 0.8376068376068376,
+            "pr_auc": 0.8640718058790176,
+            "roc_auc": 0.9615396463467867
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.2631578947368421,
+            "recall": 0.30612244897959184,
+            "f1": 0.2830188679245283,
+            "pr_auc": 0.14970163609735612,
+            "roc_auc": 0.7782785830419525
+          }
+        },
+        "confusion_matrix": [
+          [
+            2231,
+            3,
+            73,
+            77,
+            31
+          ],
+          [
+            0,
+            92,
+            1,
+            0,
+            0
+          ],
+          [
+            20,
+            22,
+            37,
+            14,
+            1
+          ],
+          [
+            49,
+            22,
+            29,
+            539,
+            10
+          ],
+          [
+            19,
+            1,
+            6,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "model": "small_tree",
+      "class_weight_power": 0.35,
+      "non_normal_probability_scale": 0.7500000000000004,
+      "fit_seconds": 5.226881801999298,
+      "node_count": 391,
+      "depth": 8,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2351,
+          "no intersection": 96,
+          "crossed, no absorption": 131,
+          "cutoff": 661,
+          "failed run": 61
+        },
+        "grouped": {
+          "accuracy": 0.8715151515151515,
+          "balanced_accuracy_observed": 0.6224943216550005,
+          "macro_f1_observed": 0.6022236601898264,
+          "macro_f1_all_5": 0.6022236601898264,
+          "weighted_f1": 0.8764361354761789,
+          "mcc": 0.7067276467118003,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.9048484848484849,
+          "balanced_accuracy": 0.8902480962908377,
+          "precision": 0.8008429926238145,
+          "recall": 0.8587570621468926,
+          "f1": 0.8287895310796074,
+          "mcc": 0.7639089019237622,
+          "pr_auc": 0.824092799486485,
+          "roc_auc": 0.9275799791790948,
+          "brier": 0.08202970228146295
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.9468311356869418,
+            "recall": 0.9217391304347826,
+            "f1": 0.9341166596726815,
+            "pr_auc": 0.9571981096854312,
+            "roc_auc": 0.9275827864921453
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.6875,
+            "recall": 0.7096774193548387,
+            "f1": 0.6984126984126984,
+            "pr_auc": 0.5766993940043452,
+            "roc_auc": 0.8516098856332418
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.29770992366412213,
+            "recall": 0.4148936170212766,
+            "f1": 0.3466666666666667,
+            "pr_auc": 0.24502687723111638,
+            "roc_auc": 0.7692391924715627
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8063540090771558,
+            "recall": 0.8212634822804314,
+            "f1": 0.8137404580152672,
+            "pr_auc": 0.8284608722033389,
+            "roc_auc": 0.9523777694726936
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.19672131147540983,
+            "recall": 0.24489795918367346,
+            "f1": 0.21818181818181817,
+            "pr_auc": 0.09363983489446404,
+            "roc_auc": 0.7254659476832874
+          }
+        },
+        "confusion_matrix": [
+          [
+            2226,
+            0,
+            56,
+            102,
+            31
+          ],
+          [
+            26,
+            66,
+            1,
+            0,
+            0
+          ],
+          [
+            20,
+            14,
+            39,
+            18,
+            3
+          ],
+          [
+            56,
+            15,
+            30,
+            533,
+            15
+          ],
+          [
+            23,
+            1,
+            5,
+            8,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "model": "small_tree",
+      "class_weight_power": 0.45,
+      "non_normal_probability_scale": 0.30000000000000004,
+      "fit_seconds": 5.301198414999817,
+      "node_count": 389,
+      "depth": 8,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2297,
+          "no intersection": 140,
+          "crossed, no absorption": 160,
+          "cutoff": 671,
+          "failed run": 32
+        },
+        "grouped": {
+          "accuracy": 0.8657575757575757,
+          "balanced_accuracy_observed": 0.6603407638112733,
+          "macro_f1_observed": 0.6104079626351313,
+          "macro_f1_all_5": 0.6104079626351313,
+          "weighted_f1": 0.8718721672747346,
+          "mcc": 0.702744970676874,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.9024242424242425,
+          "balanced_accuracy": 0.8968242271116258,
+          "precision": 0.7806580259222333,
+          "recall": 0.8847457627118644,
+          "f1": 0.8294491525423728,
+          "mcc": 0.7644118545534039,
+          "pr_auc": 0.7990690923459405,
+          "roc_auc": 0.9458567568515983,
+          "brier": 0.0769911411414323
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.9555942533739661,
+            "recall": 0.9089026915113871,
+            "f1": 0.9316638370118846,
+            "pr_auc": 0.976609519935967,
+            "roc_auc": 0.9458581605081235
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.6571428571428571,
+            "recall": 0.989247311827957,
+            "f1": 0.7896995708154506,
+            "pr_auc": 0.7601338501478202,
+            "roc_auc": 0.9901693540004896
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.23125,
+            "recall": 0.39361702127659576,
+            "f1": 0.29133858267716534,
+            "pr_auc": 0.19801595475298167,
+            "roc_auc": 0.796888480375891
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.7794336810730254,
+            "recall": 0.8058551617873652,
+            "f1": 0.7924242424242425,
+            "pr_auc": 0.7793940851547286,
+            "roc_auc": 0.9461249323597398
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.3125,
+            "recall": 0.20408163265306123,
+            "f1": 0.24691358024691357,
+            "pr_auc": 0.1327526466522363,
+            "roc_auc": 0.750864726081143
+          }
+        },
+        "confusion_matrix": [
+          [
+            2195,
+            3,
+            80,
+            123,
+            14
+          ],
+          [
+            0,
+            92,
+            1,
+            0,
+            0
+          ],
+          [
+            15,
+            22,
+            37,
+            16,
+            4
+          ],
+          [
+            65,
+            22,
+            35,
+            523,
+            4
+          ],
+          [
+            22,
+            1,
+            7,
+            9,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "model": "small_tree",
+      "class_weight_power": 0.55,
+      "non_normal_probability_scale": 0.42500000000000016,
+      "fit_seconds": 5.9192067200001475,
+      "node_count": 373,
+      "depth": 8,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2230,
+          "no intersection": 140,
+          "crossed, no absorption": 169,
+          "cutoff": 628,
+          "failed run": 133
+        },
+        "grouped": {
+          "accuracy": 0.8563636363636363,
+          "balanced_accuracy_observed": 0.7041687890084012,
+          "macro_f1_observed": 0.614059074594182,
+          "macro_f1_all_5": 0.614059074594182,
+          "weighted_f1": 0.8729177926687418,
+          "mcc": 0.6967914456952868,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.8942424242424243,
+          "balanced_accuracy": 0.8983928132785908,
+          "precision": 0.7504672897196262,
+          "recall": 0.9073446327683616,
+          "f1": 0.8214833759590793,
+          "mcc": 0.754097278859165,
+          "pr_auc": 0.8312887980404788,
+          "roc_auc": 0.9489941631282826,
+          "brier": 0.08091313387493065
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.9632286995515695,
+            "recall": 0.8894409937888199,
+            "f1": 0.9248654467168999,
+            "pr_auc": 0.9761048575250311,
+            "roc_auc": 0.9489941631282826
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.6571428571428571,
+            "recall": 0.989247311827957,
+            "f1": 0.7896995708154506,
+            "pr_auc": 0.7601338501478202,
+            "roc_auc": 0.9901693540004896
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.27218934911242604,
+            "recall": 0.48936170212765956,
+            "f1": 0.34980988593155893,
+            "pr_auc": 0.21400757021472563,
+            "roc_auc": 0.7933114107856281
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8328025477707006,
+            "recall": 0.8058551617873652,
+            "f1": 0.8191072826938136,
+            "pr_auc": 0.8278968805792788,
+            "roc_auc": 0.9516904688697873
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.12781954887218044,
+            "recall": 0.3469387755102041,
+            "f1": 0.18681318681318682,
+            "pr_auc": 0.08412757601075903,
+            "roc_auc": 0.7471390278658372
+          }
+        },
+        "confusion_matrix": [
+          [
+            2148,
+            3,
+            82,
+            90,
+            92
+          ],
+          [
+            0,
+            92,
+            1,
+            0,
+            0
+          ],
+          [
+            11,
+            22,
+            46,
+            8,
+            7
+          ],
+          [
+            55,
+            22,
+            32,
+            523,
+            17
+          ],
+          [
+            16,
+            1,
+            8,
+            7,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "model": "small_tree",
+      "class_weight_power": 0.7,
+      "non_normal_probability_scale": 0.25,
+      "fit_seconds": 5.510186042999521,
+      "node_count": 237,
+      "depth": 8,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2258,
+          "no intersection": 140,
+          "crossed, no absorption": 231,
+          "cutoff": 615,
+          "failed run": 56
+        },
+        "grouped": {
+          "accuracy": 0.850909090909091,
+          "balanced_accuracy_observed": 0.6687836606523219,
+          "macro_f1_observed": 0.5919797201053684,
+          "macro_f1_all_5": 0.5919797201053684,
+          "weighted_f1": 0.8647911678204133,
+          "mcc": 0.6802619220663098,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.8942424242424243,
+          "balanced_accuracy": 0.8933817594834544,
+          "precision": 0.7571976967370442,
+          "recall": 0.8915254237288136,
+          "f1": 0.8188894654903995,
+          "mcc": 0.7498572395459043,
+          "pr_auc": 0.8103926839227642,
+          "roc_auc": 0.942282579452808,
+          "brier": 0.08119313173828245
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.9574844995571302,
+            "recall": 0.8952380952380953,
+            "f1": 0.9253156430558528,
+            "pr_auc": 0.972855203976574,
+            "roc_auc": 0.9422825794528078
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.6571428571428571,
+            "recall": 0.989247311827957,
+            "f1": 0.7896995708154506,
+            "pr_auc": 0.7601338501478202,
+            "roc_auc": 0.9901693540004896
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.21645021645021645,
+            "recall": 0.5319148936170213,
+            "f1": 0.3076923076923077,
+            "pr_auc": 0.2224190543110195,
+            "roc_auc": 0.8196798555899178
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8065040650406504,
+            "recall": 0.7642526964560863,
+            "f1": 0.7848101265822784,
+            "pr_auc": 0.8072457351471416,
+            "roc_auc": 0.9435913650632751
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.14285714285714285,
+            "recall": 0.16326530612244897,
+            "f1": 0.1523809523809524,
+            "pr_auc": 0.07273910680702253,
+            "roc_auc": 0.7631811875780764
+          }
+        },
+        "confusion_matrix": [
+          [
+            2162,
+            3,
+            122,
+            99,
+            29
+          ],
+          [
+            0,
+            92,
+            1,
+            0,
+            0
+          ],
+          [
+            9,
+            22,
+            50,
+            11,
+            2
+          ],
+          [
+            64,
+            22,
+            50,
+            496,
+            17
+          ],
+          [
+            23,
+            1,
+            8,
+            9,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "model": "small_tree",
+      "class_weight_power": 0.85,
+      "non_normal_probability_scale": 0.30000000000000004,
+      "fit_seconds": 4.891619801000161,
+      "node_count": 229,
+      "depth": 8,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2141,
+          "no intersection": 133,
+          "crossed, no absorption": 307,
+          "cutoff": 578,
+          "failed run": 141
+        },
+        "grouped": {
+          "accuracy": 0.8178787878787879,
+          "balanced_accuracy_observed": 0.6883212646400666,
+          "macro_f1_observed": 0.5825121899510299,
+          "macro_f1_all_5": 0.5825121899510299,
+          "weighted_f1": 0.8483105402696222,
+          "mcc": 0.6380168502025915,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.8678787878787879,
+          "balanced_accuracy": 0.8807383233322805,
+          "precision": 0.6937014667817084,
+          "recall": 0.9084745762711864,
+          "f1": 0.786692759295499,
+          "mcc": 0.7067026827837568,
+          "pr_auc": 0.8231491261791846,
+          "roc_auc": 0.9461042682855505,
+          "brier": 0.10077983745359234
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.9621672115833723,
+            "recall": 0.8530020703933747,
+            "f1": 0.9043020193151887,
+            "pr_auc": 0.9777183020640681,
+            "roc_auc": 0.9461030985717795
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.6766917293233082,
+            "recall": 0.967741935483871,
+            "f1": 0.7964601769911505,
+            "pr_auc": 0.7694649018442152,
+            "roc_auc": 0.9850746518871689
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.16938110749185667,
+            "recall": 0.5531914893617021,
+            "f1": 0.2593516209476309,
+            "pr_auc": 0.16742831752056714,
+            "roc_auc": 0.7844633068316058
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8321799307958477,
+            "recall": 0.7411402157164869,
+            "f1": 0.7840260798696006,
+            "pr_auc": 0.8080075308915404,
+            "roc_auc": 0.946754110290096
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.11347517730496454,
+            "recall": 0.32653061224489793,
+            "f1": 0.16842105263157894,
+            "pr_auc": 0.07483062519619292,
+            "roc_auc": 0.7649012234853954
+          }
+        },
+        "confusion_matrix": [
+          [
+            2060,
+            3,
+            176,
+            79,
+            97
+          ],
+          [
+            0,
+            90,
+            3,
+            0,
+            0
+          ],
+          [
+            8,
+            19,
+            52,
+            13,
+            2
+          ],
+          [
+            55,
+            20,
+            67,
+            481,
+            26
+          ],
+          [
+            18,
+            1,
+            9,
+            5,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "model": "profile_mlp",
+      "class_weight_power": 0.25,
+      "non_normal_probability_scale": 1.0250000000000008,
+      "best_epoch": 73,
+      "fit_seconds": 401.62894015000074,
+      "parameter_count": 131077,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2329,
+          "no intersection": 103,
+          "crossed, no absorption": 118,
+          "cutoff": 717,
+          "failed run": 33
+        },
+        "grouped": {
+          "accuracy": 0.923030303030303,
+          "balanced_accuracy_observed": 0.7708574213188555,
+          "macro_f1_observed": 0.7535661874471499,
+          "macro_f1_all_5": 0.7535661874471499,
+          "weighted_f1": 0.9240578303778206,
+          "mcc": 0.8261185931858159,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.9454545454545454,
+          "balanced_accuracy": 0.9459100957995579,
+          "precision": 0.86302780638517,
+          "recall": 0.9468926553672317,
+          "f1": 0.9030172413793104,
+          "mcc": 0.8669881161249445,
+          "pr_auc": 0.9556293308603043,
+          "roc_auc": 0.983954802259887,
+          "brier": 0.04475131225471025
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.9798196650923143,
+            "recall": 0.9449275362318841,
+            "f1": 0.9620573355817875,
+            "pr_auc": 0.9941808956582513,
+            "roc_auc": 0.983954802259887
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.883495145631068,
+            "recall": 0.978494623655914,
+            "f1": 0.9285714285714286,
+            "pr_auc": 0.9874713440206552,
+            "roc_auc": 0.9996211244891048
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.5338983050847458,
+            "recall": 0.6702127659574468,
+            "f1": 0.5943396226415094,
+            "pr_auc": 0.612465310133606,
+            "roc_auc": 0.9717882693354215
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8270571827057183,
+            "recall": 0.9137134052388289,
+            "f1": 0.8682284040995608,
+            "pr_auc": 0.9394556088164763,
+            "roc_auc": 0.9844004559142435
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.5151515151515151,
+            "recall": 0.3469387755102041,
+            "f1": 0.4146341463414634,
+            "pr_auc": 0.306449138204746,
+            "roc_auc": 0.9210666733626702
+          }
+        },
+        "confusion_matrix": [
+          [
+            2282,
+            0,
+            22,
+            102,
+            9
+          ],
+          [
+            0,
+            91,
+            1,
+            1,
+            0
+          ],
+          [
+            17,
+            0,
+            63,
+            14,
+            0
+          ],
+          [
+            11,
+            12,
+            26,
+            593,
+            7
+          ],
+          [
+            19,
+            0,
+            6,
+            7,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "model": "profile_mlp",
+      "class_weight_power": 0.35,
+      "non_normal_probability_scale": 1.0250000000000008,
+      "best_epoch": 14,
+      "fit_seconds": 136.83443571499993,
+      "parameter_count": 131077,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2291,
+          "no intersection": 117,
+          "crossed, no absorption": 111,
+          "cutoff": 735,
+          "failed run": 46
+        },
+        "grouped": {
+          "accuracy": 0.9124242424242425,
+          "balanced_accuracy_observed": 0.7633712199577335,
+          "macro_f1_observed": 0.727459411210496,
+          "macro_f1_all_5": 0.727459411210496,
+          "weighted_f1": 0.9149241036494955,
+          "mcc": 0.8064858922726308,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.9393939393939394,
+          "balanced_accuracy": 0.9449907007755203,
+          "precision": 0.8394449950445986,
+          "recall": 0.9570621468926553,
+          "f1": 0.8944033790918691,
+          "mcc": 0.8557620166179729,
+          "pr_auc": 0.958448160189904,
+          "roc_auc": 0.9843075879332328,
+          "brier": 0.05137390882743603
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.9834133566128328,
+            "recall": 0.9329192546583851,
+            "f1": 0.9575010624734381,
+            "pr_auc": 0.9942133282276828,
+            "roc_auc": 0.9843075879332328
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.7777777777777778,
+            "recall": 0.978494623655914,
+            "f1": 0.8666666666666667,
+            "pr_auc": 0.9876076744039629,
+            "roc_auc": 0.999597654324713
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.4954954954954955,
+            "recall": 0.5851063829787234,
+            "f1": 0.5365853658536586,
+            "pr_auc": 0.5018486293979633,
+            "roc_auc": 0.9625336802006875
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8054421768707483,
+            "recall": 0.9121725731895224,
+            "f1": 0.8554913294797688,
+            "pr_auc": 0.9367103455673602,
+            "roc_auc": 0.9820755490122342
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.43478260869565216,
+            "recall": 0.40816326530612246,
+            "f1": 0.42105263157894735,
+            "pr_auc": 0.2540380829485087,
+            "roc_auc": 0.9199116127533757
+          }
+        },
+        "confusion_matrix": [
+          [
+            2253,
+            0,
+            30,
+            118,
+            14
+          ],
+          [
+            0,
+            91,
+            2,
+            0,
+            0
+          ],
+          [
+            11,
+            8,
+            55,
+            18,
+            2
+          ],
+          [
+            13,
+            18,
+            16,
+            592,
+            10
+          ],
+          [
+            14,
+            0,
+            8,
+            7,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "model": "profile_mlp",
+      "class_weight_power": 0.45,
+      "non_normal_probability_scale": 0.5000000000000002,
+      "best_epoch": 35,
+      "fit_seconds": 220.35384881499976,
+      "parameter_count": 131077,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2337,
+          "no intersection": 112,
+          "crossed, no absorption": 117,
+          "cutoff": 692,
+          "failed run": 42
+        },
+        "grouped": {
+          "accuracy": 0.9190909090909091,
+          "balanced_accuracy_observed": 0.7584029228047718,
+          "macro_f1_observed": 0.7277592138499169,
+          "macro_f1_all_5": 0.7277592138499169,
+          "weighted_f1": 0.9205579389708647,
+          "mcc": 0.8165966993414056,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.9454545454545454,
+          "balanced_accuracy": 0.9444783661438046,
+          "precision": 0.8660436137071651,
+          "recall": 0.9423728813559322,
+          "f1": 0.9025974025974026,
+          "mcc": 0.8663000240134153,
+          "pr_auc": 0.9621039051519585,
+          "roc_auc": 0.9855816401726497,
+          "brier": 0.04415767824731124
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.9781771501925546,
+            "recall": 0.9465838509316771,
+            "f1": 0.9621212121212122,
+            "pr_auc": 0.9946585899924817,
+            "roc_auc": 0.9855816401726498
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.8125,
+            "recall": 0.978494623655914,
+            "f1": 0.8878048780487805,
+            "pr_auc": 0.9880055685875734,
+            "roc_auc": 0.9995507139959295
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.5384615384615384,
+            "recall": 0.6702127659574468,
+            "f1": 0.5971563981042654,
+            "pr_auc": 0.559658236991925,
+            "roc_auc": 0.9697110471058256
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8352601156069365,
+            "recall": 0.8906009244992296,
+            "f1": 0.8620432513049963,
+            "pr_auc": 0.9399866803099688,
+            "roc_auc": 0.9840453263849617
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.35714285714285715,
+            "recall": 0.30612244897959184,
+            "f1": 0.32967032967032966,
+            "pr_auc": 0.26089914044885154,
+            "roc_auc": 0.9246762377667154
+          }
+        },
+        "confusion_matrix": [
+          [
+            2286,
+            0,
+            22,
+            95,
+            12
+          ],
+          [
+            0,
+            91,
+            2,
+            0,
+            0
+          ],
+          [
+            12,
+            4,
+            63,
+            14,
+            1
+          ],
+          [
+            15,
+            17,
+            25,
+            578,
+            14
+          ],
+          [
+            24,
+            0,
+            5,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "model": "profile_mlp",
+      "class_weight_power": 0.55,
+      "non_normal_probability_scale": 0.5750000000000003,
+      "best_epoch": 35,
+      "fit_seconds": 220.63789821799946,
+      "parameter_count": 131077,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2294,
+          "no intersection": 111,
+          "crossed, no absorption": 144,
+          "cutoff": 696,
+          "failed run": 55
+        },
+        "grouped": {
+          "accuracy": 0.9115151515151515,
+          "balanced_accuracy_observed": 0.7795621606076429,
+          "macro_f1_observed": 0.7251856840680978,
+          "macro_f1_all_5": 0.7251856840680978,
+          "weighted_f1": 0.9157635757064507,
+          "mcc": 0.8048560741060834,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.9403030303030303,
+          "balanced_accuracy": 0.9456118187879425,
+          "precision": 0.841948310139165,
+          "recall": 0.9570621468926553,
+          "f1": 0.8958223162347964,
+          "mcc": 0.8576719412408651,
+          "pr_auc": 0.9616071335223895,
+          "roc_auc": 0.9853598624416605,
+          "brier": 0.04897738124835238
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.983435047951177,
+            "recall": 0.9341614906832298,
+            "f1": 0.9581652155447017,
+            "pr_auc": 0.9947090779714906,
+            "roc_auc": 0.9853598624416605
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.8198198198198198,
+            "recall": 0.978494623655914,
+            "f1": 0.8921568627450981,
+            "pr_auc": 0.9851841864481292,
+            "roc_auc": 0.9994534804577353
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.4930555555555556,
+            "recall": 0.7553191489361702,
+            "f1": 0.5966386554621849,
+            "pr_auc": 0.5576452909432715,
+            "roc_auc": 0.9705538816846073
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8232758620689655,
+            "recall": 0.8828967642526965,
+            "f1": 0.8520446096654275,
+            "pr_auc": 0.935019914252651,
+            "roc_auc": 0.9825010069753018
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.3090909090909091,
+            "recall": 0.3469387755102041,
+            "f1": 0.3269230769230769,
+            "pr_auc": 0.2736046816405573,
+            "roc_auc": 0.9237283347666966
+          }
+        },
+        "confusion_matrix": [
+          [
+            2256,
+            0,
+            33,
+            106,
+            20
+          ],
+          [
+            0,
+            91,
+            2,
+            0,
+            0
+          ],
+          [
+            7,
+            3,
+            71,
+            12,
+            1
+          ],
+          [
+            11,
+            17,
+            31,
+            573,
+            17
+          ],
+          [
+            20,
+            0,
+            7,
+            5,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "model": "profile_mlp",
+      "class_weight_power": 0.65,
+      "non_normal_probability_scale": 0.3500000000000001,
+      "best_epoch": 34,
+      "fit_seconds": 214.7684941059997,
+      "parameter_count": 131077,
+      "validation": {
+        "n_samples": 3300,
+        "true_group_counts": {
+          "normal": 2415,
+          "no intersection": 93,
+          "crossed, no absorption": 94,
+          "cutoff": 649,
+          "failed run": 49
+        },
+        "predicted_group_counts": {
+          "normal": 2326,
+          "no intersection": 100,
+          "crossed, no absorption": 138,
+          "cutoff": 670,
+          "failed run": 66
+        },
+        "grouped": {
+          "accuracy": 0.9018181818181819,
+          "balanced_accuracy_observed": 0.7484478048469692,
+          "macro_f1_observed": 0.7077706264907716,
+          "macro_f1_all_5": 0.7077706264907716,
+          "weighted_f1": 0.9069718840774923,
+          "mcc": 0.779294576454546,
+          "observed_group_count": 5
+        },
+        "non_normal": {
+          "prevalence": 0.2681818181818182,
+          "accuracy": 0.9306060606060607,
+          "balanced_accuracy": 0.9275327227427448,
+          "precision": 0.8367556468172485,
+          "recall": 0.9209039548022598,
+          "f1": 0.8768154922001076,
+          "mcc": 0.8305106874146871,
+          "pr_auc": 0.9513864848437212,
+          "roc_auc": 0.9815943198699278,
+          "brier": 0.052248005901980824
+        },
+        "per_group": {
+          "normal": {
+            "group_id": 0,
+            "source_flags": [
+              0
+            ],
+            "support": 2415,
+            "precision": 0.9699054170249355,
+            "recall": 0.9341614906832298,
+            "f1": 0.9516979540181396,
+            "pr_auc": 0.9934209689603088,
+            "roc_auc": 0.9815943198699278
+          },
+          "no intersection": {
+            "group_id": 1,
+            "source_flags": [
+              1
+            ],
+            "support": 93,
+            "precision": 0.87,
+            "recall": 0.9354838709677419,
+            "f1": 0.9015544041450777,
+            "pr_auc": 0.9652208984858973,
+            "roc_auc": 0.9990377232599388
+          },
+          "crossed, no absorption": {
+            "group_id": 2,
+            "source_flags": [
+              2
+            ],
+            "support": 94,
+            "precision": 0.38405797101449274,
+            "recall": 0.5638297872340425,
+            "f1": 0.45689655172413796,
+            "pr_auc": 0.38452801793282215,
+            "roc_auc": 0.9565309725116471
+          },
+          "cutoff": {
+            "group_id": 3,
+            "source_flags": [
+              3,
+              8
+            ],
+            "support": 649,
+            "precision": 0.8328358208955224,
+            "recall": 0.8597842835130971,
+            "f1": 0.846095526914329,
+            "pr_auc": 0.9324625932406441,
+            "roc_auc": 0.9814954847401829
+          },
+          "failed run": {
+            "group_id": 4,
+            "source_flags": [
+              4,
+              7,
+              10,
+              100
+            ],
+            "support": 49,
+            "precision": 0.3333333333333333,
+            "recall": 0.4489795918367347,
+            "f1": 0.3826086956521739,
+            "pr_auc": 0.3243661063371318,
+            "roc_auc": 0.9218701937865272
+          }
+        },
+        "confusion_matrix": [
+          [
+            2256,
+            0,
+            36,
+            96,
+            27
+          ],
+          [
+            5,
+            87,
+            1,
+            0,
+            0
+          ],
+          [
+            29,
+            1,
+            53,
+            10,
+            1
+          ],
+          [
+            21,
+            12,
+            42,
+            558,
+            16
+          ],
+          [
+            15,
+            0,
+            6,
+            6,
+            22
+          ]
+        ]
+      }
+    }
+  ]
+}

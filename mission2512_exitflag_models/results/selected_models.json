@@ -1,0 +1,26 @@
+{
+  "selection_metric": "macro F1 over exit codes present in validation",
+  "small": {
+    "family": "decision_tree",
+    "feature_set": "compact",
+    "max_depth": 8,
+    "min_samples_leaf": 5,
+    "criterion": "log_loss",
+    "class_weight_power": 0.45
+  },
+  "best": {
+    "family": "neural_mlp",
+    "feature_set": "profile",
+    "hidden": [
+      256,
+      256,
+      128
+    ],
+    "dropout": 0.12,
+    "loss": "weighted_cross_entropy",
+    "class_weight_power": 0.5,
+    "epochs": 10,
+    "failure_probability_scale": 0.55
+  },
+  "test_access_policy": "No test arrays were read until both configurations and the 0.55 validation-selected scale were locked."
+}
